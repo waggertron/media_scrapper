@@ -1,0 +1,27 @@
+{
+  "name": "media_scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waggertron/media_scrapper.git"
+  },
+  "author": "Weylin Wagnon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waggertron/media_scrapper/issues"
+  },
+  "homepage": "https://github.com/waggertron/media_scrapper#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "mongod": "^1.3.0",
+    "mongoose": "^4.6.0",
+    "request": "^2.74.0"
+  }
+}
