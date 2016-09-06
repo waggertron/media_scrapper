@@ -37,7 +37,7 @@ html {
   padding-top: 2%;
   opacity: 1;
   letter-spacing: 3px;
-  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 #title:hover {
   color: #ffffff;
@@ -83,6 +83,7 @@ p {
 .searchBar {
   border-radius: 7px;
   padding: 5px 10px;
+  margin-bottom: 0;
 }
 .searchButton {
   text-decoration: none;
@@ -91,6 +92,6 @@ p {
   background-color: #444;
   opacity: .8;
   color: #fff;
-  top: 20px;
+  margin-top: 100px;
 
 }
