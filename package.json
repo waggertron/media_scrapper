@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/waggertron/media_scrapper#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "cheerio": "^0.22.0",
     "ejs": "^2.5.1",
     "express": "^4.14.0",

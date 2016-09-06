@@ -1,0 +1,96 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+  background-image: url(http://pre00.deviantart.net/1519/th/pre/f/2014/053/6/5/free_space_galaxy_texture_by_lyshastra-d77gh18.jpg);
+  background-size: 100% ;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+}
+#title {
+  font-family: 'Raleway', sans-serif;
+  color: #eeeeee;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 2%;
+  opacity: 1;
+  letter-spacing: 3px;
+  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+#title:hover {
+  color: #ffffff;
+  letter-spacing: 40px;
+  font-size: 1.6em;
+  opacity: 0.5;
+  transform: translateY(40px);
+  
+}
+p {
+  color: #ffffff;
+  
+}
+.poem {
+  margin: 20% auto 0;
+  line-height: 2em;
+  width: 300px;
+  font-size: .8em;
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow: 2px 2px #000000;
+  padding: 15px;
+  transition: 1s ease 0.2s;
+  display: none;
+  
+}
+.poem:hover {
+  box-shadow: 20x 20px 10px;
+  background-color: rgba(100,100,100,0.3);
+}
+.intro {
+  
+  
+  padding-bottom: 5px;
+}
+.poem-body {
+  background-color: rgba(160,167,109, 0.10);
+  padding-left: 40px;
+}
+.search {
+  width: 300px;
+  margin: 10% 43%;
+}
+.searchBar {
+  border-radius: 7px;
+  padding: 5px 10px;
+}
+.searchButton {
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 5px 10px;
+  background-color: #444;
+  opacity: .8;
+  color: #fff;
+  top: 20px;
+
+}
