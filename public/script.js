@@ -9,7 +9,7 @@ $(document).ready(() => {
       { subreddit: val },
       function () {
         setTimeout(() => {
-          window.location.replace("/Admin/index");
+          window.location.replace("/watch");
         }, 10000);
       }
     );
