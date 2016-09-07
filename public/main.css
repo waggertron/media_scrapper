@@ -47,51 +47,55 @@ html {
   transform: translateY(40px);
   
 }
-p {
-  color: #ffffff;
-  
+
+
+.loginTitle {
+  margin-bottom: 10px;
+  color: #bbb;
+  float: left;
 }
-.poem {
-  margin: 20% auto 0;
-  line-height: 2em;
-  width: 300px;
-  font-size: .8em;
-  font-family: 'Titillium Web', sans-serif;
-  text-shadow: 2px 2px #000000;
-  padding: 15px;
-  transition: 1s ease 0.2s;
-  display: none;
-  
+.signupTitle {
+  margin-bottom: 10px;
+  color: #bbb;
+  float: right;
 }
-.poem:hover {
-  box-shadow: 20x 20px 10px;
-  background-color: rgba(100,100,100,0.3);
-}
-.intro {
-  
-  
-  padding-bottom: 5px;
-}
-.poem-body {
-  background-color: rgba(160,167,109, 0.10);
-  padding-left: 40px;
-}
-.search {
-  width: 300px;
+.loginForm, .signupForm {
+  width: 200px;
   margin: 10% 43%;
 }
-.searchBar {
-  border-radius: 7px;
-  padding: 5px 10px;
-  margin-bottom: 0;
+.signupForm {
+  display: none;
 }
-.searchButton {
-  text-decoration: none;
-  border-radius: 7px;
-  padding: 5px 10px;
-  background-color: #444;
-  opacity: .8;
-  color: #fff;
-  margin-top: 100px;
+.link , a {
+  float: right;
+  color: #eee;
+  text-shadow: 1px 1px 0px #000;
+}
 
+.loginBar, .loginBar:active, .loginBar:focus, .passwordBar, .passwordBar:active, .passwordBar:focus  {
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    width: 180px;
+
+}
+.loginBar, .loginBar:active, .loginBar:focus {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;  
+}
+.passwordBar, .passwordBar:active, .passwordBar:focus {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+}
+.loginButton {
+  float: right;
+  font-size: 1.1em;
+  background-color: cornflowerblue;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
 }

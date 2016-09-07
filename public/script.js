@@ -1,17 +1,14 @@
-$(document).ready(() => {
-  $('#explore').on('click', (e) => {
+
+$(document).ready(function () {
+  $('.signupForm').hide();
+  $('.signupTitle a').on('click', function (e) {
     e.preventDefault();
-    let val = $('.searchBar').val();
-    $('#title').addClass("change");
-    $('.search').fadeOut(800);
-    $.post(
-      "/scrape",
-      { subreddit: val },
-      function () {
-        setTimeout(() => {
-          window.location.replace("/watch");
-        }, 10000);
-      }
-    );
-  })
+    $('.loginForm').slideUp(300);
+    $('.signupForm').slideDown(300);
+  });
+  $('.loginTitle a').on('click', function (e) {
+    e.preventDefault();
+    $('.signupForm').slideUp(300);
+    $('.loginForm').slideDown(300);
+  });
 });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Spacepope TV</title>
@@ -9,6 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400italic' rel='stylesheet' type='text/css'>
   <link href="main.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
   <header>
     <div id=title>
@@ -16,13 +18,33 @@
     </div>
   </header>
   <content>
-    <div class='search'>
-      <form action='/scrape' method="POST">
-        <input type="text" class="searchBar" placeholder="enter a subreddit">
-        <a href="#" id="explore" class="searchButton">explore</a>
+    <div>
+      <div>
+
+      </div>
+    </div>
+    <div class='loginForm'>
+      <h4 class='loginTitle'>Login</h4>
+      <h4 class='signupTitle link'><a href="#">Signup?</a></h4>
+      <form method="POST" action='/login' autocomplete="off">
+        <input name="email" class="loginBar" type="text" placeholder="Email"></input>
+        <input name="password" class="passwordBar" type="password" placeholder="Password"></input>
+        <input type='submit' value="Login" class="loginButton">
+        <% if(error) { %>
+        <p> <%= error %> </p>
+        <% } %>
       </form>
     </div>
-    <div class="poem">
+    <div class='signupForm'>
+      <h4 class='loginTitle'>Sign Up</h4>
+      <h4 class='loginTitle link'><a href="#">Login?</a></h4>
+      <form method="POST" action='/signup' autocomplete="off">
+        <input name="email" class="loginBar" type="text" placeholder="Email"></input>
+        <input name="password" class="passwordBar" type="password" placeholder="Password"></input>
+        <input type='submit' value="Signup" class="loginButton">
+      </form>
+    </div>
+    <!--<div class="poem">
       <p class="intro"><span>First known scripture of His Blessed Holiness Spacepope</span></p>
       <hr>
       <br>
@@ -34,7 +56,8 @@
         <p>that you can eat Facebook friends</p>
         <p><em>Orion 7:14</em></p>
       </div>
-    </div>
-  </content>  
+    </div>-->
+  </content>
 </body>
+
 </html>

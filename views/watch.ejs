@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="angular/watch.js"></script>
+  <meta charset="UTF-8">
+  <title>Spacepope TV</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400italic' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="angular/app.js"></script>
+  <link href="watch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div>
+     <img id="profile" src=<%= gravatarEmail %> >
+      <h1 id='title' contenteditable>Spacepope TV</h1>
+    </div>
+  </header>
+  <content ng-app="spacepopetv">
+      <div id='watchContent' ng-controller="tvController as ctrl">
+        {{test}}
+        <div class="sidebar">
+        </div>
+        <div>
+          <iframe id="ytplayer" type="text/html" width="640" height="390"
+  src="https://www.youtube.com/embed/LAioqvHzkkQ?autoplay=1"
+  frameborder="0"  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </content>
+</body>
+</html>
