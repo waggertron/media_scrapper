@@ -16,7 +16,38 @@ body{
   margin: 0 auto;
 }
 #ytplayer {
-  margin-left: 11%;
+
   width: 800px;
   height: 488px;
+  position: absolute;
+
+}
+.videoThumb {
+  display: inline;
+   vertical-align: text-top;
+}
+li {
+  height: 100px;
+  list-style: none;
+  width: 300px;
+  margin: 20px;
+  background-color: hsla(40,40,40,.8);
+}
+.videoTitle {
+  display: inline;
+  font-size: .6em;
+  text-align: justify;
+  vertical-align: top;
+}
+.sidebar {
+  float: left;
+}
+#title {
+  text-align: center;
+    font-family: 'Raleway', sans-serif;
+  color: #eeeeee;
+  font-size: 2.3em;
+  padding-top: 2%;
+  opacity: 1;
+  letter-spacing: 3px;
 }

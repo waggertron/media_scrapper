@@ -17,13 +17,18 @@
   <header>
     <div>
      <img id="profile" src=<%= gravatarEmail %> >
-      <h1 id='title' contenteditable>Spacepope TV</h1>
+      <h1 id='title' >Spacepope TV</h1>
     </div>
   </header>
   <content ng-app="spacepopetv">
       <div id='watchContent' ng-controller="tvController as ctrl">
-        {{test}}
         <div class="sidebar">
+          <ul>
+            <li ng-repeat="video in queue track by $index" ng-click='setAsWatched($index)'>
+              <img class='videoThumb' src={{video.thumbnailUrl}} />
+              <p class='videoTitle'>{{video.title}}</p>
+            </li>
+          <ul>
         </div>
         <div>
           <iframe id="ytplayer" type="text/html" width="640" height="390"

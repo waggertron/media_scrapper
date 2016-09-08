@@ -52,6 +52,11 @@ app.get('/watch', (req, res) => {
 });
 
 app.get('/videos', videoController.getVideos);
+app.get('/watched', videoController.getWatched);
+app.post('/watched', test, videoController.recordWatched);
+function test(req, res, next) {
+  
+} 
 
 app.listen(PORT, console.log(`server listening on port ${PORT}`));
 
