@@ -43,6 +43,7 @@ app.get('/', cookieController.checkCookie, (req, res) => {
 app.post('/login', userController.verifyUser, (req, res) => res.redirect('/watch'));
 app.post('/signup', userController.createUser, (req, res) => res.redirect('/watch'));
 
+//have watch send unwatched videos with middleware 
 app.get('/watch', (req, res) => {
   if (req.cookies.id && req.cookies.gravatarEmail) {
     res.render('watch', { gravatarEmail: req.cookies.gravatarEmail, id: req.cookies.id });
@@ -55,7 +56,9 @@ app.get('/videos', videoController.getVideos);
 app.get('/watched', videoController.getWatched);
 app.post('/watched', test, videoController.recordWatched);
 function test(req, res, next) {
-  
+  console.log('inside test id', req.cookies._id)
+  console.log('inside test', req.body);
+  next();
 } 
 
 app.listen(PORT, console.log(`server listening on port ${PORT}`));

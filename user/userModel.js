@@ -7,6 +7,7 @@ const userSchema = new Schema({
   email: { type: String, unique: true, required: true },
   gravatarEmail: { type: String },
   password: { type: String },
+  ///change watched to object
   watched: [],
 })
 userSchema.pre('save', function (next) {

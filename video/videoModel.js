@@ -12,5 +12,9 @@ const videoSchema = new Schema({
   thumbnailUrl: { type: String },
   commentLink: { type: String, unique: true }
 }, { strict: true });
-
+// maybe add a prehook to changing domain.com to domain
+//work on adding tags
+//download video
+//hit more subreddits
+//scrape recency, maybe incorporate momentjs
 module.exports = mongoose.model('Video', videoSchema);
